@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #07090E;
+    color: #F8F9FA;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+    letter-spacing: 0.02em;
+    word-spacing: 0.06em;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: 0.03em;
+    word-spacing: 0.08em;
+  }
+
+  /* Custom Antique Gold Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0B0F17;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #E5C158;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #F3E5AB;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
